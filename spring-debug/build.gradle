@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.2.3.RELEASE'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(path:':spring-beans')
+    implementation project(path:':spring-context')
+    implementation project(path:':spring-aop')
+    implementation project(path:':spring-aspects')
+    implementation project(path:':spring-context-indexer')
+    implementation project(path:':spring-context-support')
+    implementation project(path:':spring-core')
+    implementation project(path:':spring-expression')
+    implementation project(path:':spring-instrument')
+    implementation project(path:':spring-jcl')
+    implementation project(path:':spring-jdbc')
+    implementation project(path:':spring-messaging')
+    implementation project(path:':spring-orm')
+    implementation project(path:':spring-oxm')
+    implementation project(path:':spring-test')
+    implementation project(path:':spring-tx')
+    implementation project(path:':spring-web')
+    implementation project(path:':spring-webflux')
+    implementation project(path:':spring-websocket')
+
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
