@@ -15,11 +15,18 @@ public class ATest {
 
 
 	@SuppressWarnings("unchecked")
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
 		System.out.println("compile spring source start ....");
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Object a = context.getBean("a");
+		A a = (A)context.getBean("a");
 
+//		Person person = (Person)context.getBean("person");
+//		System.out.println(person.getId());
+//		System.out.println(person.getName());
+
+
+		String id = a.getId();
+		System.out.println("id:  "+id);
 		System.out.println("===========");
 
 		//  web 端获取
