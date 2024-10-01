@@ -9,4 +9,11 @@
 
 		<property name="name" value="value13242"></property>
 	</bean>
+
+<!--	<bean id="a" class="com.h.a.A">-->
+<!--		<property name="id" ref="s123">-->
+<!--		</property>-->
+
+<!--&lt;!&ndash;		<property name="name" value="value13242"></property>&ndash;&gt;-->
+<!--	</bean>-->
 </beans>
