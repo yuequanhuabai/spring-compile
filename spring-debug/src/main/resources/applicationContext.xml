@@ -3,10 +3,17 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="a" class="com.h.a.A">
+	<bean id="a" class="com.h.a.A" init-method="init">
            <property name="id" value="s123">
 		   </property>
 
 		<property name="name" value="value13242"></property>
 	</bean>
+
+	<bean id="aFactoryBean" class="com.h.a.AFactoryBean">
+
+	</bean>
+
+
+	<bean id="myb" class="com.h.a.Myb"></bean>
 </beans>
